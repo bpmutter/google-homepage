@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Google Test</title>
+
+    <style media="screen" rel="stylesheet/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        button{
+          background-color: #f4f4f4;
+          padding: .5em;
+          border-radius: 3px;
+          font: grey;
+          border:none;
+          margin: 1em;
+          font-size: 16px;
+          border-style: solid;
+          border-color: transparent !important;
+          border-width: 1px !important;
+          font: black;
+        }
+
+        button:hover{
+          border-style: solid;
+          border-color: black !important;
+          border-width: 1px !important;
+          font: black;
+
+        }
+        p{
+          font-family: sans-serif;
+        }
+        a{
+          font:blue;
+          text-decoration:none;
+          font-family: sans-serif;
+
+        }
+        a:hover{
+          text-decoration:underline;
+        }
+        a:visited{
+          text-decoration:none;
+        }
+
+
+
+
+        #nav-bar-top{
+
+          height: 75px;
+          position: fixed; /* Set the navbar to fixed position */
+          top: 0; /* Position the navbar at the top of the page */
+          width: 100%; /* Full width */
+          float: right;
+          padding-top: 10px;
+
+
+        }
+
+        #nav-bar-top a{
+          padding-bottom: 20px;
+          padding-right: 15px;
+          top: 5px;
+          position: relative;
+
+        }
+        #nav-bar-top img{
+          padding-right: 15px;
+        }
+
+        #nav-bar-top ul{
+          list-style: none;
+          display: flex;
+          float: right;
+        }
+
+
+
+        #main-site-content{
+          width:50%;
+          margin: 0 auto;
+          text-align:center;
+        }
+
+        #google-logo{
+          margin-bottom: 1em;
+        }
+
+        #search-stuff{
+          margin-top:25%;
+          margin-bottom: 1em;
+        }
+
+
+        #search-box{
+          border: solid;
+          border-color: lightgrey;
+          border-width: 1px;
+
+          width: 25em;
+          height: 3em;
+          border-radius: 1.5em;
+          margin: 0 auto;
+
+        }
+        #search-box:hover{
+          box-shadow: 0 0 5px rgba(0,0,0,0.2);
+
+        }
+
+        #search-icon{
+          position: relative;
+          float: left;
+          height: 2.7em;
+          right: -9px;
+          top:5px;
+        }
+        #voice-search{
+          position: relative;
+          float: right;
+          right: 10px;
+          top: 2px;
+          height: 2.7em;
+        }
+        #search-feild{
+          border: none;
+          height: 3em;
+          position: relative;
+          top: 8px;
+          right: -12px;
+          width: 23em;
+
+        }
+        #search-feild:focus{
+          outline:none;
+        }
+
+        #search-buttons{
+          margin-bottom: 1em;
+
+        }
+
+        #google-offered-in{
+          position:sticky;
+        }
+
+        #footer{
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          background-color: #f2f2f2;
+        }
+        #nav-bar-bottom-1{
+
+          border:solid;
+          border-left: none;
+          border-right:none;
+          border-width: 1px;
+          border-color: #e4e4e4;
+          padding-left: 5%;
+          padding-top: 1em;
+          padding-bottom:1em;
+          font: grey !important;
+          font-family: sans-serif;
+          margin-left: 0;
+        }
+        #nav-bar-bottom-2{
+          padding-left: 5%;
+          padding-top: 1em;
+          padding-bottom: 1.5em;
+          padding-right: 5%;
+        }
+
+        #nav-bar-bottom-2 ul{
+          list-style: none;
+          display: flex;
+        }
+        #nav-bar-bottom-2 li{
+          padding-right: .5em;
+        }
+
+
+        #left-content{
+          position: relative;
+          display: inline;
+          float: left;
+        }
+        #right-content{
+          position: relative;
+          float: right;
+          display: inline;
+
+        }
+
+
+
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <div id="nav-bar-top">
+      <ul>
+        <li><a href="">Gmail</a></li>
+        <li><a href="">Photos</a></li>
+
+        <li><img src="images/9-dots-grey.png" style="top: 5px; position: relative;"></li>
+        <li><img src="images/ben-photo.png"></li>
+      </ul>
+    </div>
+
+    <div id="main-site-content">
+      <div id="search-stuff">
+        <div class="image-center">
+          <img src="images/google-logo-homepage.png" id="google-logo">
+        </div>
+
+          <div id="search-box">
+            <img src="images/magnifying-glass.png" id="search-icon">
+            <input type="text" id="search-feild" >
+            <img src="images/voice-search.png" id="voice-search">
+          </div>
+      </div>
+
+
+
+      <div id="search-buttons">
+          <button id="google-search-button">Google Search</button>
+          <button id="feeling-lucky-button">I'm feeling lucky</button>
+      </div>
+
+      <div id="google-offered-in"> </div>
+        <p>Google offered in your country or region: <a href="">Latin America (Spanish)</a></p>
+    </div>
+    <div id="footer">
+      <div id="nav-bar-bottom-1">
+        Colombia
+      </div>
+
+      <div id="nav-bar-bottom-2">
+        <div id="left-content">
+          <ul>
+            <li><a href="">Publicity</a></li>
+            <li><a href="">Business</a></li>
+            <li><a href="">About Google</a></li>
+            <li><a href="">How Search Works</a></li>
+          </ul>
+        </div>
+        <div id="right-content">
+          <ul>
+            <li><a href="">Privacy</a></li>
+            <li><a href="">Conditions</a></li>
+            <li><a href="">Preferences</a></li>
+          </ul>
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
